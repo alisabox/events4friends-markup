@@ -1,0 +1,34 @@
+{
+  "name": "events4friends-markup",
+  "version": "1.0.0",
+  "description": "Events4friends markup",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run stylelint",
+    "build": "gulp build",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alisabox/events4friends-markup.git"
+  },
+  "author": "Alisa Lobzhanidze alisabox@mail.ru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alisabox/events4friends-markup/issues"
+  },
+  "homepage": "https://github.com/alisabox/events4friends-markup#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "browser-sync": "^2.27.4",
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-webp": "^4.0.1",
+    "postcss-cli": "^8.3.1",
+    "sass": "^1.35.1",
+    "stylelint": "^13.13.1"
+  }
+}
