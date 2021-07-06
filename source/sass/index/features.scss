@@ -1,0 +1,46 @@
+.features {
+  padding: 77px 10px 103px;
+  background-color: $basic-violet;
+  color: $basic-white;
+}
+
+.features__title {
+  margin: 0;
+  margin-bottom: 36px;
+  font-size: 30px;
+  line-height: 44px;
+  font-weight: 700;
+}
+
+.features__list,
+.feature__details {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.feature {
+  margin-bottom: 33px;
+}
+
+.feature_img {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.feature__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 22px;
+  line-height: 21px;
+}
+
+.feature__app {
+  margin-bottom: 5px;
+}
+
+.feature__app__img {
+  display: block;
+  width: 166px;
+  height: 54px;
+}

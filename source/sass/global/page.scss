@@ -1,0 +1,15 @@
+.page {
+  height: 100%;
+  margin: 0;
+}
+
+.page__body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0 auto;
+  font-family: "Circe", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $basic-black;
+}

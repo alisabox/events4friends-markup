@@ -1,215 +1,229 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>events4friends</title>
-  <link rel="preload" href="fonts/Circe-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/Circe-Bold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/Circe-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/Circe-Light.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/Circe-Regular.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="fonts/Circe-Bold.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="fonts/Circe-ExtraBold.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="fonts/Circe-Light.woff" as="font" type="font/woff" crossorigin>
-  <link rel="icon" href="favicon-32.ico">
-  <link rel="icon" href="img/favicons/favicon-152.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/favicons/favicon-180.png">
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header>
-    <div>
-      <img src="img/header_logo.svg" width="32" height="32" alt="Events for friends">
-      <h1>events4friends</h1>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events4friends</title>
+    <link rel="preload" href="fonts/Circe-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Circe-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Circe-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Circe-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Circe-Regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/Circe-Bold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/Circe-ExtraBold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/Circe-Light.woff" as="font" type="font/woff" crossorigin>
+    <link rel="icon" href="favicon-32.ico">
+    <link rel="icon" href="img/favicons/favicon-152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/favicon-180.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="page">
+    <div class="page__body">
+      <header class="page-header">
+        <div class="page-header__title-wrapper">
+          <img class="page-header__logo" src="img/header_logo.svg" width="32" height="32" alt="">
+          <img class="page-header__title" src="img/events4friends.svg" width="119" height="21" alt="Events for friends">
+        </div>
+        <nav class="page-navigation">
+          <button class="page-navigation__toggle">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="page-navigation__list">
+            <li><span class="page-navigation__item page-navigation__item--current">Главная</span></li>
+            <li><a class="page-navigation__item" href="#about">О нас</a></li>
+            <li><a class="page-navigation__item" href="#services">Услуги</a></li>
+            <li><a class="page-navigation__item" href="#communities">Сообщества</a></li>
+            <li><a class="page-navigation__item" href="#events">Мероприятия</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="page-main">
+        <h1 class="page-main__title">Events4Friends — нетворкинг в Калининграде</h1>
+        <section class="main-events">
+          <h2 class="visually-hidden">Главные события</h2>
+          <div class="slider">
+            <div class="slider__wrapper">
+              <h3 class="slider__title">Всемирный марафон в честь Фореста Гампа</h3>
+              <p class="slider__text">Размещаем актуальные, а главное доступные онлайн и оффлайн события для жителей города Калининград. Всегда свежие и актуальные события в нашем городе, а также актуальные события.</p>
+              <a class="slider__button" href="#">Узнать больше</a>
+            </div>
+            <button class="slider__previous-event" aria-label="Предыдущее событие"></button>
+            <button class="slider__next-event" aria-label="Следующее событие"></button>
+          </div>
+        </section>
+        <section id="about" class="about">
+          <h2 class="about__title">Для чего вам наш сервис?</h2>
+          <ol class="about__list">
+            <li class="about__item">
+              <h3 class="about__item__title">Узнавайте о мероприятиях</h3>
+              <img class="about__item__img" src="img/mobile-service-1.jpg" width="300" height="182" alt="Стол, сервированный на несколько персон">
+              <div class="about__item__text">
+                <p>Размещаем актуальные, а главное доступные онлайн и оффлайн события для жителей города Калининград. Всегда свежие и актуальные события в нашем городе, а также актуальные события.</p>
+                <p>Размещаем актуальные, а главное доступные онлайн и оффлайн события для жителей города Калининград. Всегда свежие и актуальные события в нашем городе, а также актуальные события.</p>
+              </div>
+              <a class="about__item__link" href="events.html">Все мероприятия</a>
+            </li>
+            <li class="about__item">
+              <h3 class="about__item__title">Подберите себе подходящие услуги</h3>
+              <img class="about__item__img" src="img/mobile-service-2.jpg" width="300" height="182" alt="Мужчина изготовляет кожанные изделия">
+              <div class="about__item__text">
+                <p>Размещаем актуальные, а главное доступные онлайн и оффлайн события для жителей города Калининград. Всегда свежие и актуальные события в нашем городе, а также актуальные события.</p>
+                <p>Размещаем актуальные, а главное доступные онлайн и оффлайн события для жителей города Калининград. Всегда свежие и актуальные события в нашем городе, а также актуальные события.</p>
+              </div>
+              <a class="about__item__link" href="services.html">Все услуги</a>
+            </li>
+            <li class="about__item">
+              <h3 class="about__item__title">Узнайте о сообществах вашего города</h3>
+              <img class="about__item__img" src="img/mobile-service-3.jpg" width="300" height="182" alt="Молодые мужчины на электробайках">
+              <div class="about__item__text">
+                <p>Размещаем актуальные, а главное доступные онлайн и оффлайн события для жителей города Калининград. Всегда свежие и актуальные события в нашем городе, а также актуальные события.</p>
+                <p>Размещаем актуальные, а главное доступные онлайн и оффлайн события для жителей города Калининград. Всегда свежие и актуальные события в нашем городе, а также актуальные события.</p>
+              </div>
+              <a class="about__item__link" href="communities.html">Все сообщества</a>
+            </li>
+          </ol>
+        </section>
+        <section id="events" class="events">
+          <h2 class="events__title">Мероприятия</h2>
+          <p class="events__text">Размещаем актуальные, а главное доступные онлайн и оффлайн события для жителей города Калининград. Всегда свежие и актуальные события в нашем городе, а также актуальные события.</p>
+          <div class="events__buttons">
+            <button class="events__next-events"><span class="events__buttons__text">Будущие события</span><span class="events__number">4</span></button>
+            <button class="events__previous-events"><span class="events__buttons__text">Прошедшие события</span><span class="events__number">12</span></button>
+          </div>
+          <ul class="events__list">
+            <li class="event">
+              <h3 class="event__title">Фестиваль Gear Rush</h3>
+              <p class="event__text">Мы - сервис для объединения людей по интересам, а также по нетворкингу. Существуем, чтобы жители г. Калининград могли узнавать друг о друге, быть полезными и узнавать об актуальных событиях!</p>
+              <dl class="event__details">
+                <dt class="event__details-header">Дата проведения</dt>
+                <dd class="event__details-text">15-27 июня 2021</dd>
+                <dt class="event__details-header">Формат проведения</dt>
+                <dd class="event__details-text">Оффлайн</dd>
+                <dt class="event__details-header">Колличество участников</dt>
+                <dd class="event__details-text">203</dd>
+              </dl>
+              <a class="event__button" href="#">Узнать больше</a>
+            </li>
+            <li class="event">
+              <h3 class="event__title">Фестиваль Gear Rush</h3>
+              <p class="event__text">Мы - сервис для объединения людей по интересам, а также по нетворкингу. Существуем, чтобы жители г. Калининград могли узнавать друг о друге, быть полезными и узнавать об актуальных событиях!</p>
+              <dl class="event__details">
+                <dt class="event__details-header">Дата проведения</dt>
+                <dd class="event__details-text">15-27 июня 2021</dd>
+                <dt class="event__details-header">Формат проведения</dt>
+                <dd class="event__details-text">Оффлайн</dd>
+                <dt class="event__details-header">Колличество участников</dt>
+                <dd class="event__details-text">203</dd>
+              </dl>
+              <a class="event__button" href="#">Узнать больше</a>
+            </li>
+          </ul>
+          <a class="events__button" href="events.html">Все мероприятия</a>
+        </section>
+        <section id="services" class="services">
+          <h2 class="services__title">Услуги</h2>
+          <p class="services__text">Размещаем актуальные, а главное доступные онлайн и оффлайн события для жителей города Калининград. Всегда свежие и актуальные события в нашем городе, а также актуальные события.</p>
+          <ul class="services__list">
+            <li class="service">
+              <h3 class="service__title">Клининг</h3>
+              <img class="service__img" src="img/mobile-cleaning.jpg" width="267" height="144" alt="Человек в рабочей форме пылесосит пол">
+              <p class="service__text">Небольшое описание с чуть более подробными пояснениями о подробностях услуги, которые захочет узнать пользователь этого сайта</p>
+              <a class="service__link" href="#">Подробнее</a>
+            </li>
+            <li class="service">
+              <h3 class="service__title">Дизайн</h3>
+              <img class="service__img" src="img/mobile-design.jpg" width="267" height="144" alt="Мужчина за компьютером">
+              <p class="service__text">Небольшое описание с чуть более подробными пояснениями о подробностях услуги, которые захочет узнать пользователь этого сайта</p>
+              <a class="service__link" href="#">Подробнее</a>
+            </li>
+            <li class="service">
+              <h3 class="service__title">Каршеринг</h3>
+              <img class="service__img" src="img/mobile-carsharing.jpg" width="267" height="144" alt="Автомобиль каршеринга">
+              <p class="service__text">Небольшое описание с чуть более подробными пояснениями о подробностях услуги, которые захочет узнать пользователь этого сайта</p>
+              <a class="service__link" href="#">Подробнее</a>
+            </li>
+          </ul>
+          <a class="services__link" href="services.html">Все услуги</a>
+        </section>
+        <section id="communities" class="communities">
+          <h2 class="communities__title">Сообщества</h2>
+          <p class="communities__text">Размещаем актуальные, а главное доступные онлайн и оффлайн события для жителей города Калининград. Всегда свежие и актуальные события в нашем городе, а также актуальные события.</p>
+          <ul class="communities__list">
+            <li class="community">
+              <h3 class="community__title">Дизайн-телега</h3>
+              <img class="community__img" src="img/mobile-filler.svg" width="95" height="95" alt="">
+              <p class="community__text">Здесь собраны бесплатные материалы, шрифты, мокапы, иконки.</p>
+            </li>
+            <li class="community">
+              <h3 class="community__title">Дизайн-телега</h3>
+              <img class="community__img" src="img/mobile-filler.svg" width="95" height="95" alt="">
+              <p class="community__text">Здесь собраны бесплатные материалы, шрифты, мокапы, иконки.</p>
+            </li>
+            <li class="community">
+              <h3 class="community__title">Дизайн-телега</h3>
+              <img class="community__img" src="img/mobile-filler.svg" width="95" height="95" alt="">
+              <p class="community__text">Здесь собраны бесплатные материалы, шрифты, мокапы, иконки.</p>
+            </li>
+            <li class="community">
+              <h3 class="community__title">Дизайн-телега</h3>
+              <img class="community__img" src="img/mobile-filler.svg" width="95" height="95" alt="">
+              <p class="community__text">Здесь собраны бесплатные материалы, шрифты, мокапы, иконки.</p>
+            </li>
+            <li class="community">
+              <h3 class="community__title">Дизайн-телега</h3>
+              <img class="community__img" src="img/mobile-filler.svg" width="95" height="95" alt="">
+              <p class="community__text">Здесь собраны бесплатные материалы, шрифты, мокапы, иконки.</p>
+            </li>
+            <li class="community">
+              <h3 class="community__title">Дизайн-телега</h3>
+              <img class="community__img" src="img/mobile-filler.svg" width="95" height="95" alt="">
+              <p class="community__text">Здесь собраны бесплатные материалы, шрифты, мокапы, иконки.</p>
+            </li>
+          </ul>
+          <a class="communities__link" href="communities.html">Все сообщества</a>
+        </section>
+        <section class="features">
+          <h2 class="features__title">Преимущества</h2>
+          <ul class="features__list">
+            <li class="feature">
+              <img class="feature_img" src="img/lock.png" width="42" heigh="42" alt="">
+              <h3 class="feature__title">ИТ безопасность сервиса</h3>
+              <ul class="feature__details">
+                <li class="feature__details__item">Нельзя заблокировать одним нажатием кнопки</li>
+                <li class="feature__details__item">Поддержка ИТ специалистов</li>
+                <li class="feature__details__item">Запрет вредоносной рекламы</li>
+                <li class="feature__details__item">Цензура сообщений ботом</li>
+              </ul>
+            </li>
+            <li class="feature">
+              <img class="feature_img" src="img/megaphon.png" width="42" heigh="42" alt="">
+              <h3 class="feature__title">Свободное распространение</h3>
+              <ul class="feature__details">
+                <li class="feature__details__item">Личные цели</li>
+                <li class="feature__details__item">Коммерческие цели</li>
+                <li class="feature__details__item">Без ограничений</li>
+              </ul>
+            </li>
+            <li class="feature">
+              <img class="feature_img" src="img/phone.png" width="42" heigh="42" alt="">
+              <h3 class="feature__title">Наличие приложения</h3>
+              <ul class="feature__details">
+                <li class="feature__app">
+                  <a href="#">
+                    <img class="feature__app__img" src="img/appstore.svg" width="166" height="54" alt="Скачать с App Store">
+                  </a>
+                </li>
+                <li class="feature__app">
+                  <a href="#">
+                    <img class="feature__app__img" src="img/android.svg" width="166" height="54" alt="Скачать с Android">
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </main>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">О нас</a></li>
-        <li><a href="services.html">Услуги</a></li>
-        <li><a href="communities.html">Сообщества</a></li>
-        <li><a href="events.html">Мероприятия</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <h2>Events4Friends — нетворкинг в Калининграде</h2>
-    <section>
-      <h3>Главные события</h3>
-      <div>
-        <h4>Всемирный марафон в честь Фореста Гампа</h3>
-        <p>Размещаем актуальные, а главное доступные онлайн и оффлайн события для жителей города Калининград. Всегда свежие и актуальные события в нашем городе, а также актуальные события.</p>
-        <a href="#">Узнать больше</a>
-      </div>
-      <button>Предыдущее событие</button>
-      <button>Следующее событие</button>
-    </section>
-    <section>
-      <h3>Для чего вам наш сервис?</h3>
-      <ol>
-        <li>
-          <h4>Узнавайте о мероприятиях</h4>
-          <img src="img/mobile-service-1.jpg" width="300" height="182" alt="Стол, сервированный на несколько персон">
-          <div>
-            <p>Размещаем актуальные, а главное доступные онлайн и оффлайн события для жителей города Калининград. Всегда свежие и актуальные события в нашем городе, а также актуальные события.</p>
-            <p>Размещаем актуальные, а главное доступные онлайн и оффлайн события для жителей города Калининград. Всегда свежие и актуальные события в нашем городе, а также актуальные события.</p>
-            <a href="#">Все мероприятия</a>
-          </div>
-        </li>
-        <li>
-          <h4>Подберите себе подходящие услуги</h4>
-          <img src="img/mobile-service-2.jpg" width="300" height="182" alt="Мужчина изготовляет кожанные изделия">
-          <div>
-            <p>Размещаем актуальные, а главное доступные онлайн и оффлайн события для жителей города Калининград. Всегда свежие и актуальные события в нашем городе, а также актуальные события.</p>
-            <p>Размещаем актуальные, а главное доступные онлайн и оффлайн события для жителей города Калининград. Всегда свежие и актуальные события в нашем городе, а также актуальные события.</p>
-            <a href="#">Все мероприятия</a>
-          </div>
-        </li>
-        <li>
-          <h4>Узнайте о сообществах вашего города</h4>
-          <img src="img/mobile-service-3.jpg" width="300" height="182" alt="Молодые мужчины на электробайках">
-          <div>
-            <p>Размещаем актуальные, а главное доступные онлайн и оффлайн события для жителей города Калининград. Всегда свежие и актуальные события в нашем городе, а также актуальные события.</p>
-            <p>Размещаем актуальные, а главное доступные онлайн и оффлайн события для жителей города Калининград. Всегда свежие и актуальные события в нашем городе, а также актуальные события.</p>
-            <a href="#">Все мероприятия</a>
-          </div>
-        </li>
-      </ol>
-    </section>
-    <section>
-      <h3>Мероприятия</h3>
-      <p>Размещаем актуальные, а главное доступные онлайн и оффлайн события для жителей города Калининград. Всегда свежие и актуальные события в нашем городе, а также актуальные события.</p>
-      <button>Будущие события<span>4</span></button>
-      <button>Прошедшие события<span>12</span></button>
-      <ul>
-        <li>
-          <h4>Фестиваль Gear Rush</h4>
-          <p>Мы - сервис для объединения людей по интересам, а также по нетворкингу. Существуем, чтобы жители г. Калининград могли узнавать друг о друге, быть полезными и узнавать об актуальных событиях!</p>
-          <dl>
-            <dt>Дата проведения</dt>
-            <dd>15-27 июня 2021</dd>
-            <dt>Формат проведения</dt>
-            <dd>Оффлайн</dd>
-            <dt>Колличество участников</dt>
-            <dd>203</dd>
-          </dl>
-          <a href="#">Узнать больше</a>
-        </li>
-        <li>
-          <h4>Фестиваль Gear Rush</h4>
-          <p>Мы - сервис для объединения людей по интересам, а также по нетворкингу. Существуем, чтобы жители г. Калининград могли узнавать друг о друге, быть полезными и узнавать об актуальных событиях!</p>
-          <dl>
-            <dt>Дата проведения</dt>
-            <dd>15-27 июня 2021</dd>
-            <dt>Формат проведения</dt>
-            <dd>Оффлайн</dd>
-            <dt>Колличество участников</dt>
-            <dd>203</dd>
-          </dl>
-          <a href="#">Узнать больше</a>
-        </li>
-      </ul>
-      <a href="#">Все мероприятия</a>
-    </section>
-    <section>
-      <h3>Услуги</h3>
-      <p>Размещаем актуальные, а главное доступные онлайн и оффлайн события для жителей города Калининград. Всегда свежие и актуальные события в нашем городе, а также актуальные события.</p>
-      <ul>
-        <li>
-          <h4>Клининг</h4>
-          <img src="img/mobile-cleaning.jpg" width="267" height="144" alt="Человек в рабочей форме пылесосит пол">
-          <p>Небольшое описание с чуть более подробными пояснениями о подробностях услуги, которые захочет узнать пользователь этого сайта</p>
-          <a href="#">Подробнее</a>
-        </li>
-        <li>
-          <h4>Дизайн</h4>
-          <img src="img/mobile-design.jpg" width="267" height="144" alt="Мужчина за компьютером">
-          <p>Небольшое описание с чуть более подробными пояснениями о подробностях услуги, которые захочет узнать пользователь этого сайта</p>
-          <a href="#">Подробнее</a>
-        </li>
-        <li>
-          <h4>Каршеринг</h4>
-          <img src="img/mobile-carsharing.jpg" width="267" height="144" alt="Автомобиль каршеринга">
-          <p>Небольшое описание с чуть более подробными пояснениями о подробностях услуги, которые захочет узнать пользователь этого сайта</p>
-          <a href="#">Подробнее</a>
-        </li>
-      </ul>
-      <a href="#">Все услуги</a>
-    </section>
-    <section>
-      <h3>Сообщества</h3>
-      <p>Размещаем актуальные, а главное доступные онлайн и оффлайн события для жителей города Калининград. Всегда свежие и актуальные события в нашем городе, а также актуальные события.</p>
-      <ul>
-        <li>
-          <h4>Дизайн-телега</h4>
-          <img src="" width="95" heigh="95" alt="">
-          <p>Здесь собраны бесплатные материалы, шрифты, мокапы, иконки.</p>
-        </li>
-        <li>
-          <h4>Дизайн-телега</h4>
-          <img src="" width="95" heigh="95" alt="">
-          <p>Здесь собраны бесплатные материалы, шрифты, мокапы, иконки.</p>
-        </li>
-        <li>
-          <h4>Дизайн-телега</h4>
-          <img src="" width="95" heigh="95" alt="">
-          <p>Здесь собраны бесплатные материалы, шрифты, мокапы, иконки.</p>
-        </li>
-        <li>
-          <h4>Дизайн-телега</h4>
-          <img src="" width="95" heigh="95" alt="">
-          <p>Здесь собраны бесплатные материалы, шрифты, мокапы, иконки.</p>
-        </li>
-        <li>
-          <h4>Дизайн-телега</h4>
-          <img src="" width="95" heigh="95" alt="">
-          <p>Здесь собраны бесплатные материалы, шрифты, мокапы, иконки.</p>
-        </li>
-        <li>
-          <h4>Дизайн-телега</h4>
-          <img src="" width="95" heigh="95" alt="">
-          <p>Здесь собраны бесплатные материалы, шрифты, мокапы, иконки.</p>
-        </li>
-      </ul>
-      <a href="#">Все услуги</a>
-    </section>
-    <section>
-      <h3>Преимущества</h3>
-      <ul>
-        <li>
-          <h4>ИТ безопасность сервиса</h4>
-          <ul>
-            <li>Нельзя заблокировать одним нажатием кнопки</li>
-            <li>Поддержка ИТ специалистов</li>
-            <li>Запрет вредоносной рекламы</li>
-            <li>Цензура сообщений ботом</li>
-          </ul>
-        </li>
-        <li>
-          <h4>Свободное распространение</h4>
-          <ul>
-            <li>Личные цели</li>
-            <li>Коммерческие цели</li>
-            <li>Без ограничений</li>
-          </ul>
-        </li>
-        <li>
-          <h4>Наличие  приложения</h4>
-          <ul>
-            <li>
-              <img src="img/appstore.svg" width="26" height="32" alt="">
-              <p>Get it from <span>App Store</span></p>
-            </li>
-            <li>
-              <img src="img/android.svg" width="27" height="32" alt="">
-              <p>Get it from <span>Android</span></p>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-  </main>
-</body>
+  </body>
 </html>

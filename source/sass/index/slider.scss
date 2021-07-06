@@ -1,0 +1,81 @@
+.slider {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.slider__wrapper {
+  min-width: 300px;
+  height: 338px;
+  box-sizing: border-box;
+  padding: 34px 12px;
+  text-align: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgba(0,0,0, 0.7) 30%, rgba(0,0,0,0)),
+              url("../img/mobile-slider-marathon.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  color: $basic-white;
+}
+
+.slider__title {
+  margin: 0;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.slider__text {
+  margin: 8px 24px 41px;
+}
+
+.slider__button {
+  display: inline-block;
+  min-height: 29px;
+  width: 153px;
+  padding: 7px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: $basic-white;
+  background-color: $light-blue-button;
+  border-radius: 7px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+
+.slider__previous-event,
+.slider__next-event {
+  padding: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 40px;
+  width: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.slider__previous-event {
+  left: 0;
+
+  &:before {
+    content: url("../img/previous-arrow.svg");
+    position: relative;
+    display: inline-block;
+  }
+}
+
+.slider__next-event {
+  right: 0;
+
+  &:before {
+    content: url("../img/next-arrow.svg");
+    position: relative;
+    display: inline-block;
+  }
+}

@@ -5,7 +5,7 @@ const sass = require('gulp-sass')(require('sass'));
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
-const webp = require("gulp-webp");
+// const webp = require("gulp-webp");
 
 // Styles
 
@@ -75,13 +75,13 @@ exports.scripts = scripts;
 
 // Webp
 
-const createWebp = () => {
-  return gulp.src("source/img/**/*.{png,jpg}")
-    .pipe(webp({quality: 75}))
-    .pipe(gulp.dest("source/img"))
-}
+// const createWebp = () => {
+//   return gulp.src("source/img/**/*.{png,jpg}")
+//     .pipe(webp({quality: 75}))
+//     .pipe(gulp.dest("source/img"))
+// }
 
-exports.createWebp = createWebp;
+// exports.createWebp = createWebp;
 
 
 
@@ -92,7 +92,7 @@ const build = gulp.series(
     styles,
     html,
     scripts,
-    createWebp
+    // createWebp
   )
 )
 
@@ -105,7 +105,7 @@ exports.default = gulp.series(
     styles,
     html,
     scripts,
-    createWebp
+    // createWebp
   ),
   gulp.series(
     server,
