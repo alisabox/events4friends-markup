@@ -14,19 +14,43 @@
   background: linear-gradient(to right, rgba(0,0,0, 0.7) 30%, rgba(0,0,0,0)),
               url("../img/mobile-slider-marathon.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   border-radius: 10px;
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 84px;
+    padding: 32px 27px;
+    min-width: 472px;
+    height: 276px;
+    text-align: left;
+    background: linear-gradient(to right, rgba(0,0,0, 0.7) 30%, rgba(0,0,0,0)),
+                url("../img/tablet-slider-marathon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .slider__title {
   margin: 0;
+  margin-bottom: 8px;
   font-size: 20px;
   line-height: 23px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    line-height: 29px;
+  }
 }
 
 .slider__text {
-  margin: 8px 24px 41px;
+  margin: 0 24px 41px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 3px 17px 0;
+    font-size: 17px;
+    line-height: 23px;
+  }
 }
 
 .slider__button {
@@ -42,6 +66,12 @@
   font-size: 12px;
   line-height: 16px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    min-height: 38px;
+    padding: 11px;
+    text-align: center;
+  }
 }
 
 

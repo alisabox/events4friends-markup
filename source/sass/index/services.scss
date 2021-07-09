@@ -1,6 +1,11 @@
 .services {
   margin-bottom: 33px;
   padding: 0 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 74px;
+    padding-right: 28px;
+  }
 }
 
 .services__title {
@@ -9,6 +14,11 @@
   font-size: 25px;
   line-height: 29px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    line-height: 66px;
+  }
 }
 
 .services__text {
@@ -16,6 +26,12 @@
   margin-bottom: 6px;
   font-size: 15px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 15px;
+    font-size: 17px;
+    line-height: 23px;
+  }
 }
 
 .services__list {
@@ -32,12 +48,21 @@
   border-radius: 10px;
   box-shadow: 0 4px 13px $shadow;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+    padding: 25px 45px 22px;
+  }
+
   &:hover {
     box-shadow: 0 20px 30px $shadow;
   }
 
   &:last-child {
     margin-bottom: 19px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 29px;
+    }
   }
 }
 
@@ -47,20 +72,37 @@
   font-size: 20px;
   line-height: 20px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 26px;
+    line-height: 26px;
+  }
 }
 
 .service__img {
   display: block;
-  width: 267px;
+  width: 100%;
   height: 144px;
+  object-fit: cover;
   order: -1;
   margin-bottom: 26px;
+  border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+  }
 }
 
 .service__text {
   margin: 0;
   margin-bottom: 26px;
   line-height: 22px;
+  font-weight: 350;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .service__link {
@@ -70,6 +112,10 @@
 
   &:hover {
     text-decoration: underline;
+  }
+
+  @media (min-width: $tablet-width) {
+    line-height: 20px;
   }
 }
 
@@ -89,4 +135,12 @@
   font-size: 12px;
   line-height: 16px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    min-height: 47px;
+    width: 185px;
+    padding: 12px;
+    font-size: 16px;
+    line-height: 22px;
+  }
 }

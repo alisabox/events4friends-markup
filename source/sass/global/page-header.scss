@@ -10,17 +10,35 @@
   display: flex;
   align-items: center;
   border-bottom: 1px solid $basic-white;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 16px;
+  }
 }
 
 .page-header__logo {
   margin-right: 2px;
+
+  @media (min-width: $tablet-width) {
+    width: 50px;
+    height: 50px;
+    margin-right: 16px;
+  }
+}
+
+.page-header__title {
+  @media (min-width: $tablet-width) {
+    width: 132px;
+    height: 23px;
+  }
+
 }
 
 .page-navigation__toggle {
   position: absolute;
   top: 0;
   right: 0;
-  height: 54px;
+  min-height: 54px;
   width: 54px;
   padding: 0;
   background: none;
@@ -29,6 +47,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+  @media (min-width: $tablet-width) {
+    width: 64px;
+    min-height: 64px;
   }
 }
 
@@ -44,6 +66,12 @@
   box-shadow: 0 6px 0 0 $basic-white;
   transform: rotate(0deg);
   transition: transform 0.5s ease-in-out, box-shadow 0.7s ease-in-out;
+
+  @media (min-width: $tablet-width) {
+    width: 36px;
+    height: 4px;
+    box-shadow: 0 9px 0 0 $basic-white;
+  }
 }
 
 .page-navigation__toggle::after {
@@ -57,6 +85,12 @@
   background-color: $basic-white;
   transform: rotate(0deg);
   transition: transform 0.5s ease;
+
+  @media (min-width: $tablet-width) {
+    top: 42px;
+    width: 36px;
+    height: 4px;
+  }
 }
 
 .page-navigation__list {
@@ -74,4 +108,8 @@
 .page-navigation__item {
   text-decoration: none;
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }

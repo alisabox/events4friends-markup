@@ -1,5 +1,9 @@
 .events {
   padding: 42px 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 110px;
+  }
 }
 
 .events__title {
@@ -8,6 +12,12 @@
   font-size: 25px;
   line-height: 29px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 9px;
+    font-size: 45px;
+    line-height: 66px;
+  }
 }
 
 .events__text {
@@ -15,6 +25,12 @@
   margin-bottom: 23px;
   font-size: 15px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+    font-size: 17px;
+    line-height: 23px;
+  }
 }
 
 .events__buttons {
@@ -22,6 +38,12 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
   margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    display: inline-flex;
+    column-gap: 31px;
+    margin-bottom: 39px;
+  }
 }
 
 .events__next-events,
@@ -35,6 +57,10 @@
   border-radius: 3px;
   font-weight: 700;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 10px 8px 15px;
+  }
 
   &:hover {
     background-color: $blue-button;
@@ -54,10 +80,16 @@
 }
 
 .events__buttons__text {
+  font-family: "Circe", "Arial", sans-serif;
   font-size: 10px;
   line-height: 15px;
   color: $basic-white;
   letter-spacing: -0.2px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 13px;
+    line-height: 19px;
+  }
 }
 
 .events__number {
@@ -74,6 +106,11 @@
   font-size: 9px;
   line-height: 13px;
   letter-spacing: -0.2px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 11px;
+    line-height: 16px;
+  }
 }
 
 .events__list {
@@ -89,6 +126,10 @@
 
 .event:last-child {
   margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 41px;
+  }
 }
 
 .event__title {
@@ -101,14 +142,27 @@
   font-size: 25px;
   line-height: 37px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 44px;
+    padding: 40px 23px 16px;
+  }
 }
 
 .event__text {
-  margin: 11px 11px 15px;
-  padding-bottom: 10px;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 10px 5px 5px 11px;
   border-bottom: 1px solid rgba($basic-black, 0.3);
   font-size: 10px;
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 23px 15px;
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 .event__details {
@@ -118,6 +172,12 @@
   grid-template-columns: fit-content fit-content 1fr;
   grid-template-rows: min-content min-content;
   column-gap: 9px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 41px;
+    padding: 0 23px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .event__details-header {
@@ -125,6 +185,11 @@
   font-size: 9px;
   line-height: 12px;
   color: $basic-violet;
+
+  @media (min-width: $tablet-width) {
+    font-size: 13px;
+    line-height: 18px;
+  }
 }
 
 .event__details-text {
@@ -133,6 +198,11 @@
   font-size: 10px;
   line-height: 14px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 .event__button {
@@ -149,6 +219,12 @@
   line-height: 18px;
   font-weight: 700;
   background-color: $light-blue-button;
+
+  @media (min-width: $tablet-width) {
+    padding: 16px;
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 .events__button {
@@ -166,4 +242,12 @@
   font-size: 12px;
   line-height: 16px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    min-height: 47px;
+    width: 185px;
+    padding: 12px;
+    font-size: 16px;
+    line-height: 22px;
+  }
 }

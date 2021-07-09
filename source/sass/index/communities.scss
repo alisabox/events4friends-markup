@@ -1,6 +1,10 @@
 .communities {
   margin-bottom: 33px;
   padding: 0 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 53px;
+  }
 }
 
 .communities__title {
@@ -9,6 +13,11 @@
   font-size: 25px;
   line-height: 29px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    line-height: 66px;
+  }
 }
 
 .communities__text {
@@ -16,6 +25,12 @@
   margin-bottom: 17px;
   font-size: 15px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 37px;
+    font-size: 17px;
+    line-height: 23px;
+  }
 }
 
 .communities__list {
@@ -35,12 +50,20 @@
   border-radius: 10px;
   box-shadow: 0 0 20px $shadow;
 
+  @media (min-width: $tablet-width) {
+    min-height: 116px;
+  }
+
   &:hover {
     box-shadow: 0 0 40px $shadow;
   }
 
   &:last-child {
     margin-bottom: 32px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 37px;
+    }
   }
 }
 
@@ -50,6 +73,11 @@
   width: 95px;
   height: 95px;
   border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 116px;
+    height: 116px;
+  }
 }
 
 .community__title {
@@ -57,6 +85,12 @@
   font-size: 17px;
   line-height: 25px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    margin: 24px 18px 3px;
+    font-size: 19px;
+    line-height: 28px;
+  }
 }
 
 .community__text {
@@ -64,6 +98,12 @@
   font-size: 15px;
   line-height: 14px;
   opacity: 0.5;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 80px 12px 18px;
+    font-size: 17px;
+    line-height: 16px;
+  }
 }
 
 .communities__link {
@@ -82,4 +122,12 @@
   font-size: 12px;
   line-height: 16px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    min-height: 47px;
+    width: 185px;
+    padding: 12px;
+    font-size: 16px;
+    line-height: 22px;
+  }
 }

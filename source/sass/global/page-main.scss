@@ -1,8 +1,15 @@
 .page-main__title {
   margin: 0;
   padding: 26px 10px;
-  font-size: 1.25em;
-  line-height: 1.15em;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
   color: $basic-white;
   background-color: $basic-violet;
+
+  @media (min-width: $tablet-width) {
+    padding: 48px 10px;
+    font-size: 35px;
+    line-height: 40px;
+  }
 }

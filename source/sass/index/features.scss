@@ -2,6 +2,10 @@
   padding: 77px 10px 103px;
   background-color: $basic-violet;
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    padding: 72px 10px 96px;
+  }
 }
 
 .features__title {
@@ -10,6 +14,12 @@
   font-size: 30px;
   line-height: 44px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+    font-size: 36px;
+    line-height: 53px;
+  }
 }
 
 .features__list,
@@ -17,6 +27,14 @@
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.features__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 37px;
+  }
 }
 
 .feature {
@@ -33,6 +51,11 @@
   margin-bottom: 10px;
   font-size: 22px;
   line-height: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 23px;
+  }
 }
 
 .feature__app {

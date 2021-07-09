@@ -12,10 +12,9 @@ $grey-category: #DBDBDB;
 $dark-grey-text: #484848;
 $shadow: rgba(0, 0, 0, 0.1);
 
-@mixin padding-left-right {
-  padding-left: 30px;
-  padding-right: 30px;
-}
+$tablet-width: 640px;
+$desktop-width: 1366px;
+$mobile-width-only: 639px;
 
 .visually-hidden {
   position: absolute;
