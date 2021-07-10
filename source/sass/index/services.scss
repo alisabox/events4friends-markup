@@ -1,10 +1,16 @@
-.services {
+.services__wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
   margin-bottom: 33px;
   padding: 0 10px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 74px;
     padding-right: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 103px;
   }
 }
 
@@ -19,6 +25,12 @@
     font-size: 45px;
     line-height: 66px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 677px;
+    font-size: 52px;
+    line-height: 77px;
+  }
 }
 
 .services__text {
@@ -32,12 +44,28 @@
     font-size: 17px;
     line-height: 23px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+    max-width: 742px;
+    font-size: 22px;
+    line-height: 30px;
+  }
 }
 
 .services__list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 31px;
+    row-gap: 31px;
+    min-height: 412px;
+    margin-bottom: 31px;
+  }
 }
 
 .service {
@@ -51,6 +79,13 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 52px;
     padding: 25px 45px 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 25px 28px;
   }
 
   &:hover {
@@ -89,6 +124,11 @@
   border-radius: 10px;
 
   @media (min-width: $tablet-width) {
+    height: 168px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 19px;
   }
 }
 
@@ -106,6 +146,7 @@
 }
 
 .service__link {
+  margin-top: auto;
   text-decoration: none;
   color: inherit;
   font-weight: 700;
@@ -116,6 +157,10 @@
 
   @media (min-width: $tablet-width) {
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 22px;
   }
 }
 

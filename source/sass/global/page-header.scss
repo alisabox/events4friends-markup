@@ -2,6 +2,15 @@
   position: relative;
   padding: 16px 10px 0;
   background-color: $basic-violet;
+
+  @media (min-width: $desktop-width) {
+    padding: 18px 103px 0;
+  }
+}
+
+.page-header__wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
 }
 
 .page-header__title-wrapper {
@@ -14,6 +23,11 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 16px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 9px;
+    padding-bottom: 18px;
+  }
 }
 
 .page-header__logo {
@@ -24,6 +38,11 @@
     height: 50px;
     margin-right: 16px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .page-header__title {
@@ -32,6 +51,10 @@
     height: 23px;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 145px;
+    height: 26px;
+  }
 }
 
 .page-navigation__toggle {
@@ -51,6 +74,10 @@
   @media (min-width: $tablet-width) {
     width: 64px;
     min-height: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -100,8 +127,27 @@
   text-align: center;
   border-bottom: 1px solid $basic-white;
 
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
   & li {
     margin-bottom: 15px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 7px;
+      margin-right: 122px;
+      font-size: 22px;
+      line-height: 32px;
+    }
+  }
+
+  & li:last-child {
+    @media (min-width: $desktop-width) {
+      margin-right: 0;
+    }
   }
 }
 

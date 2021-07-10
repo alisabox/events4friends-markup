@@ -1,15 +1,25 @@
 .page-main__title {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1160px;
   padding: 26px 10px;
   font-size: 20px;
-  font-weight: 700;
   line-height: 23px;
+  font-weight: 700;
   color: $basic-white;
-  background-color: $basic-violet;
 
   @media (min-width: $tablet-width) {
     padding: 48px 10px;
     font-size: 35px;
     line-height: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 69px 103px 46px;
+    font-size: 50px;
+    line-height: 57px;
+  }
+}
+
+.page-main__title-wrapper {
+  background-color: $basic-violet;
 }
