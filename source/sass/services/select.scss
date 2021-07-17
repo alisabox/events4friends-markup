@@ -7,7 +7,7 @@
     margin-bottom: 47px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     margin: 0 103px 31px;
   }
 }
@@ -28,7 +28,7 @@
   line-height: 21px;
   font-weight: 700;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     min-width: 196px;
     min-height: 40px;
     font-size: 16px;

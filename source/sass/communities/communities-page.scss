@@ -1,0 +1,141 @@
+.communities-page__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width-sx) {
+    margin-bottom: 193px;
+  }
+}
+
+.communities-page__item {
+  position: relative;
+  margin: 0 10px 20px;
+  padding: 21px 7px;
+  box-sizing: border-box;
+  border: 1px solid rgba($basic-violet, 0.2);
+  border-radius: 10px;
+
+  &:hover {
+    background-color: $pale-blue-background;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 18px;
+    padding: 41px 50px 27px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width-sx) {
+    margin: 0 103px 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 408px;
+    padding: 42px 450px 44px 41px;
+  }
+}
+
+.communities-page__item-header {
+  margin: 0;
+  margin-bottom: 22px;
+  font-size: 24px;
+  line-height: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 14px;
+    font-size: 27px;
+    line-height: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+
+.communities-page__item-text {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 21px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 27px;
+    line-height: 34px;
+  }
+}
+
+.communities-page__item-img {
+  display: block;
+  width: 100%;
+  height: 141px;
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    height: 216px;
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 432px;
+    height: 100%;
+    top: 0;
+    right: 0;
+  }
+}
+
+.communities-page__img-content {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+
+  @media (min-width: $desktop-width) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+  }
+}
+
+.communities-page__item-link {
+  @include button-settings-mobile;
+  display: block;
+  margin: 0 auto;
+  color: $basic-black;
+  background-color: $basic-white;
+  border: 1px solid $pale-blue-line;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    color: $basic-white;
+    background-color: $light-blue-button;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include button-settings-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: auto 0 0 0;
+    min-height: 62px;
+    width: 264px;
+    padding: 13px;
+    font-size: 27px;
+    line-height: 34px;
+    font-weight: 400;
+  }
+}

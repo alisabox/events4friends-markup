@@ -18,42 +18,81 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <main>
-    <h2>Сообщества</h2>
-    <p>Размещаем актуальные, а главное доступные онлайн и оффлайн события для жителей города Калининград. Всегда свежие и актуальные события в нашем городе, а также актуальные события.</p>
-    <ul>
-      <li>
-        <h3>Разговорный клуб английского</h3>
-        <p>Небольшое описание с чуть более подробными пояснениями о подробностях услуги, которые захочет узнать пользователь этого сайта. Вообщем описание очень классное.</p>
-        <img src="img/mobile-english.jpg" width="274" height="141" alt="Группа людей за столами">
-        <a href="#">Узнать больше</a>
-      </li>
-      <li>
-        <h3>Велочерепашки</h3>
-        <p>Небольшое описание с чуть более подробными пояснениями о подробностях услуги, которые захочет узнать пользователь этого сайта. Вообщем описание очень классное.</p>
-        <img src="img/mobile-bike.jpg" width="274" height="141" alt="Группа людей на велосипедах на природе">
-        <a href="#">Узнать больше</a>
-      </li>
-      <li>
-        <h3>Клуб северной ходьбы</h3>
-        <p>Небольшое описание с чуть более подробными пояснениями о подробностях услуги, которые захочет узнать пользователь этого сайта. Вообщем описание очень классное.</p>
-        <img src="img/mobile-walking.jpg" width="274" height="141" alt="Молодая женщина занимается скандинавской ходьбой на природе">
-        <a href="#">Узнать больше</a>
-      </li>
-      <li>
-        <h3>Клуб северной ходьбы</h3>
-        <p>Небольшое описание с чуть более подробными пояснениями о подробностях услуги, которые захочет узнать пользователь этого сайта. Вообщем описание очень классное.</p>
-        <img src="img/mobile-walking-2.jpg" width="274" height="141" alt="Молодая женщина занимается скандинавской ходьбой на природе">
-        <a href="#">Узнать больше</a>
-      </li>
-      <li>
-        <h3>Клуб северной ходьбы</h3>
-        <p>Небольшое описание с чуть более подробными пояснениями о подробностях услуги, которые захочет узнать пользователь этого сайта. Вообщем описание очень классное.</p>
-        <img src="img/mobile-walking-3.jpg" width="274" height="141" alt="Группа людей занимается скандинавской ходьбой на природе">
-        <a href="#">Узнать больше</a>
-      </li>
-    </ul>
-  </main>
+<body class="page">
+  <div class="page__body">
+    <main class="page-main">
+      <div class="page-main__wrapper">
+        <h1 class="page-main__title-black">Сообщества</h2>
+        <p class="page-main__text">Размещаем актуальные, а главное доступные онлайн и оффлайн события для жителей города Калининград. Всегда свежие и актуальные события в нашем городе, а также актуальные события.</p>
+        <ul class="communities-page__list">
+          <li class="communities-page__item">
+            <h3 class="communities-page__item-header">Разговорный клуб английского</h3>
+            <p class="communities-page__item-text">Небольшое описание с чуть более подробными пояснениями о подробностях услуги, которые захочет узнать пользователь этого сайта. Вообщем описание очень классное.</p>
+            <picture class="communities-page__item-img">
+              <!-- <source type="image/webp" media="(min-width: 1024px)" srcset="img/desktop-english.webp">
+              <source type="image/webp" media="(min-width: 640px)" srcset="img/tablet-english.webp"> -->
+              <!-- <source type="image/webp" srcset="img/mobile-english.webp"> -->
+              <source media="(min-width: 1024px)" srcset="img/desktop-english.jpg">
+              <source media="(min-width: 640px)" srcset="img/tablet-english.jpg">
+              <img class="communities-page__img-content" src="img/mobile-english.jpg" width="274" height="141" alt="Группа людей за столами">
+            </picture>
+            <a href="#" class="communities-page__item-link">Узнать больше</a>
+          </li>
+          <li class="communities-page__item">
+            <h3 class="communities-page__item-header">Велочерепашки</h3>
+            <p class="communities-page__item-text">Небольшое описание с чуть более подробными пояснениями о подробностях услуги, которые захочет узнать пользователь этого сайта. Вообщем описание очень классное.</p>
+            <picture class="communities-page__item-img">
+              <!-- <source type="image/webp" media="(min-width: 1024px)" srcset="img/desktop-bike.webp">
+              <source type="image/webp" media="(min-width: 640px)" srcset="img/tablet-bike.webp"> -->
+              <!-- <source type="image/webp" srcset="img/mobile-bike.webp"> -->
+              <source media="(min-width: 1024px)" srcset="img/desktop-bike.jpg">
+              <source media="(min-width: 640px)" srcset="img/tablet-bike.jpg">
+              <img class="communities-page__img-content" src="img/mobile-bike.jpg" width="274" height="141" alt="Группа людей на велосипедах на природе">
+            </picture>
+            <a href="#" class="communities-page__item-link">Узнать больше</a>
+          </li>
+          <li class="communities-page__item">
+            <h3 class="communities-page__item-header">Клуб северной ходьбы</h3>
+            <p class="communities-page__item-text">Небольшое описание с чуть более подробными пояснениями о подробностях услуги, которые захочет узнать пользователь этого сайта. Вообщем описание очень классное.</p>
+            <picture class="communities-page__item-img">
+              <!-- <source type="image/webp" media="(min-width: 1024px)" srcset="img/desktop-walking.webp">
+              <source type="image/webp" media="(min-width: 640px)" srcset="img/tablet-walking.webp"> -->
+              <!-- <source type="image/webp" srcset="img/mobile-walking.webp"> -->
+              <source media="(min-width: 1024px)" srcset="img/desktop-walking.jpg">
+              <source media="(min-width: 640px)" srcset="img/tablet-walking.jpg">
+              <img class="communities-page__img-content" src="img/mobile-walking.jpg" width="274" height="141" alt="Молодая женщина занимается скандинавской ходьбой на природе">
+            </picture>
+            <a href="#" class="communities-page__item-link">Узнать больше</a>
+          </li>
+          <li class="communities-page__item">
+            <h3 class="communities-page__item-header">Клуб северной ходьбы</h3>
+            <p class="communities-page__item-text">Небольшое описание с чуть более подробными пояснениями о подробностях услуги, которые захочет узнать пользователь этого сайта. Вообщем описание очень классное.</p>
+            <picture class="communities-page__item-img">
+              <!-- <source type="image/webp" media="(min-width: 1024px)" srcset="img/desktop-walking-2.webp">
+              <source type="image/webp" media="(min-width: 640px)" srcset="img/tablet-walking-2.webp"> -->
+              <!-- <source type="image/webp" srcset="img/mobile-walking-2.webp"> -->
+              <source media="(min-width: 1024px)" srcset="img/desktop-walking-2.jpg">
+              <source media="(min-width: 640px)" srcset="img/tablet-walking-2.jpg">
+              <img class="communities-page__img-content" src="img/mobile-walking-2.jpg" width="274" height="141" alt="Молодая женщина занимается скандинавской ходьбой на природе">
+            </picture>
+            <a href="#" class="communities-page__item-link">Узнать больше</a>
+          </li>
+          <li class="communities-page__item">
+            <h3 class="communities-page__item-header">Клуб северной ходьбы</h3>
+            <p class="communities-page__item-text">Небольшое описание с чуть более подробными пояснениями о подробностях услуги, которые захочет узнать пользователь этого сайта. Вообщем описание очень классное.</p>
+            <picture class="communities-page__item-img">
+              <!-- <source type="image/webp" media="(min-width: 1024px)" srcset="img/desktop-walking-3.webp">
+              <source type="image/webp" media="(min-width: 640px)" srcset="img/tablet-walking-3.webp"> -->
+              <!-- <source type="image/webp" srcset="img/mobile-walking-3.webp"> -->
+              <source media="(min-width: 1024px)" srcset="img/desktop-walking-3.jpg">
+              <source media="(min-width: 640px)" srcset="img/tablet-walking-3.jpg">
+              <img class="communities-page__img-content" src="img/mobile-walking-3.jpg" width="274" height="141" alt="Группа людей занимается скандинавской ходьбой на природе">
+            </picture>
+            <a href="#" class="communities-page__item-link">Узнать больше</a>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </div>
 </body>
 </html>
