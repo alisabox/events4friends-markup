@@ -8,8 +8,9 @@
     margin-bottom: 53px;
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 0 103px;
+  @media (min-width: $desktop-width-sx) {
+    margin-bottom: 30px;
+    padding: 51px 103px 0;
   }
 }
 
@@ -22,7 +23,7 @@
     @include title-font-tablet;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     @include title-font-desktop;
   }
 }
@@ -37,7 +38,7 @@
     margin-bottom: 37px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     @include text-font-desktop;
     max-width: 742px;
   }
@@ -48,7 +49,7 @@
   margin: 0;
   padding: 0;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 40px;
@@ -71,7 +72,7 @@
     min-height: 116px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     column-gap: 18px;
     margin-bottom: 19px;
   }
@@ -87,7 +88,7 @@
       margin-bottom: 37px;
     }
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $desktop-width-sx) {
       margin-bottom: 19px;
     }
   }
@@ -129,6 +130,10 @@
     margin: 0 80px 12px 0;
     font-size: 17px;
     line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width-sx) {
+    margin: 0 18px 12px 0;
   }
 }
 

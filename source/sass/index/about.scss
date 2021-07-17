@@ -8,9 +8,9 @@
     padding: 45px 10px 0;
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 110px 103px 0;
-    margin-bottom: 205px;
+  @media (min-width: $desktop-width-sx) {
+    margin-bottom: 30px;
+    padding: 51px 103px 0;
   }
 }
 
@@ -27,7 +27,7 @@
     line-height: 52px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     margin-bottom: 60px;
     font-size: 56px;
     line-height: 83px;
@@ -50,6 +50,10 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width-sx) {
+    margin-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,6 +79,10 @@
     @media (min-width: $desktop-width) {
       padding-left: 600px;
     }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -121,8 +129,13 @@
     line-height: 30px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     max-width: 534px;
+    font-size: 35px;
+    line-height: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 25px;
     font-size: 45px;
     line-height: 53px;
@@ -138,6 +151,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
+    margin-bottom: 0;
     width: 295px;
     height: 430px;
     top: 0;
@@ -164,6 +178,12 @@
 .about__item__text {
   margin-bottom: 17px;
 
+  @media (min-width: $desktop-width-sx) {
+    max-width: 534px;
+    font-size: 19px;
+    line-height: 26px;
+  }
+
   @media (min-width: $desktop-width) {
     max-width: 560px;
     font-size: 22px;
@@ -189,9 +209,15 @@
     margin-top: auto;
   }
 
+  @media (min-width: $desktop-width-sx) {
+    width: 230px;
+    padding: 12px;
+    font-size: 19px;
+    line-height: 22px;
+  }
+
   @media (min-width: $desktop-width) {
     min-height: 60px;
-    width: 230px;
     padding: 18px;
     font-size: 16px;
     line-height: 22px;

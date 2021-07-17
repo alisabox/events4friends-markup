@@ -3,7 +3,7 @@
   padding: 16px 10px 0;
   background-color: $basic-violet;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     padding: 18px 103px 0;
   }
 }
@@ -24,7 +24,7 @@
     padding-bottom: 16px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     margin-bottom: 9px;
     padding-bottom: 18px;
   }
@@ -39,7 +39,7 @@
     margin-right: 16px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     width: 60px;
     height: 60px;
   }
@@ -51,7 +51,7 @@
     height: 23px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     width: 145px;
     height: 26px;
   }
@@ -76,7 +76,7 @@
     min-height: 64px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     display: none;
   }
 }
@@ -127,7 +127,7 @@
   text-align: center;
   border-bottom: 1px solid $basic-white;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
@@ -136,16 +136,20 @@
   & li {
     margin-bottom: 15px;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-width-sx) {
       margin-bottom: 7px;
-      margin-right: 122px;
+      margin-right: 82px;
       font-size: 22px;
       line-height: 32px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 122px;
     }
   }
 
   & li:last-child {
-    @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-width-sx) {
       margin-right: 0;
     }
   }

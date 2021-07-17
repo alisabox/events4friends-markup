@@ -12,7 +12,8 @@
     padding: 72px 10px 96px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
+    margin-bottom: 30px;
     padding: 136px 103px;
   }
 }
@@ -30,7 +31,7 @@
     line-height: 53px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     @include title-font-desktop;
     margin-bottom: 43px;
   }
@@ -65,7 +66,7 @@
   height: 42px;
   margin-bottom: 15px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     width: 85px;
     height: 85px;
     margin-bottom: 25px;
@@ -83,14 +84,14 @@
     line-height: 23px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     font-size: 32px;
     line-height: 30px;
   }
 }
 
 .feature__details {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     font-size: 21px;
     line-height: 28px;
   }

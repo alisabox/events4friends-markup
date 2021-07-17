@@ -13,7 +13,7 @@
     line-height: 40px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     padding: 69px 103px 46px;
     font-size: 50px;
     line-height: 57px;
@@ -34,7 +34,7 @@
     line-height: 66px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     padding: 69px 103px 46px;
     font-size: 52px;
     line-height: 71px;
@@ -57,7 +57,7 @@
     margin-bottom: 21px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     @include text-font-desktop;
     max-width: 742px;
     margin-bottom: 37px;

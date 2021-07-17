@@ -7,8 +7,9 @@
     padding-bottom: 110px;
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 110px 103px;
+  @media (min-width: $desktop-width-sx) {
+    margin-bottom: 30px;
+    padding: 51px 103px 0;
   }
 }
 
@@ -22,7 +23,7 @@
     margin-bottom: 9px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     @include title-font-desktop;
   }
 }
@@ -39,7 +40,7 @@
     line-height: 23px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     margin-bottom: 37px;
     max-width: 742px;
     font-size: 22px;
@@ -59,7 +60,7 @@
     margin-bottom: 39px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     column-gap: 17px;
     margin-bottom: 31px;
   }
@@ -82,7 +83,7 @@
     padding: 8px 10px 8px 15px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     height: 40px;
   }
 
@@ -115,7 +116,7 @@
     line-height: 19px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     font-size: 16px;
     line-height: 24px;
   }
@@ -141,7 +142,7 @@
     line-height: 16px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     font-size: 12px;
     line-height: 18px;
   }
@@ -183,7 +184,7 @@
     margin-bottom: 41px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     margin-bottom: 31px;
   }
 }
@@ -226,7 +227,7 @@
     line-height: 22px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     padding: 21px 21px 18px;
     font-size: 18px;
     line-height: 24px;
@@ -247,7 +248,7 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     padding: 0 21px;
   }
 }
@@ -276,7 +277,7 @@
     line-height: 22px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     font-size: 17px;
     line-height: 23px;
   }

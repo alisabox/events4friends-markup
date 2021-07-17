@@ -14,9 +14,10 @@ $shadow: rgba(0, 0, 0, 0.1);
 $services-details-grey: #606060;
 $pale-blue-background: #F0F4FB;
 
-$tablet-width: 640px;
-$desktop-width: 1366px;
 $mobile-width-only: 639px;
+$tablet-width: 640px;
+$desktop-width-sx: 1024px;
+$desktop-width: 1366px;
 
 .visually-hidden {
   position: absolute;

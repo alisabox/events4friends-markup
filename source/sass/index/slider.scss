@@ -2,6 +2,10 @@
   position: relative;
   width: 100%;
   box-sizing: border-box;
+
+  @media (min-width: $desktop-width-sx) {
+    padding: 0 103px;
+  }
 }
 
 .slider__wrapper {
@@ -35,14 +39,18 @@
     background-size: cover;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     margin: 0 auto;
-    padding: 71px 552px 66px 46px;
+    padding: 71px 106px 66px 46px;
     height: 443px;
     background: linear-gradient(to right, rgba(0,0,0, 0.7) 30%, rgba(0,0,0,0)),
                 url("../img/desktop-slider-marathon.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 71px 552px 66px 46px;
   }
 }
 
@@ -57,7 +65,7 @@
     line-height: 29px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     margin-bottom: 10px;
     font-size: 41px;
     line-height: 47px;
@@ -74,7 +82,7 @@
     line-height: 23px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     margin-bottom: 10px;
     font-size: 22px;
     line-height: 29px;
@@ -102,7 +110,7 @@
     text-align: center;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     min-height: 47px;
     width: 185px;
     padding: 12px;
