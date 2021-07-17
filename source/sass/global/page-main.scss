@@ -20,6 +20,47 @@
   }
 }
 
+.page-main__title-black {
+  margin: 0 auto;
+  max-width: 1160px;
+  padding: 46px 10px 9px;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    padding: 41px 10px 18px;
+    font-size: 45px;
+    line-height: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 69px 103px 46px;
+    font-size: 52px;
+    line-height: 71px;
+    font-weight: 800;
+  }
+}
+
 .page-main__title-wrapper {
   background-color: $basic-violet;
+}
+
+.page-main__text {
+  @include text-font-mobile;
+  margin: 0;
+  margin-bottom: 18px;
+  padding: 0 10px;
+
+  @media (min-width: $tablet-width) {
+    @include text-font-tablet;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include text-font-desktop;
+    max-width: 742px;
+    margin-bottom: 37px;
+    padding: 0 103px;
+  }
 }

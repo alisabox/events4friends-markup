@@ -1,0 +1,47 @@
+.select-wrapper {
+  position: relative;
+  margin: 0 10px 36px;
+  width: min-content;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 103px 31px;
+  }
+}
+
+.select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  min-width: 172px;
+  min-height: 33px;
+  padding: 6px 38px 6px 14px;
+  background-color: $blue-button;
+  color: $basic-white;
+  border: none;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+
+  @media (min-width: $desktop-width) {
+    min-width: 196px;
+    min-height: 40px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.select__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 16px;
+  height: 8px;
+  width: 14px;
+  pointer-events: none;
+}

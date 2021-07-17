@@ -11,6 +11,8 @@ $basic-violet: #563AFF;
 $grey-category: #DBDBDB;
 $dark-grey-text: #484848;
 $shadow: rgba(0, 0, 0, 0.1);
+$services-details-grey: #606060;
+$pale-blue-background: #F0F4FB;
 
 $tablet-width: 640px;
 $desktop-width: 1366px;
@@ -44,6 +46,21 @@ $mobile-width-only: 639px;
   font-size: 52px;
   line-height: 77px;
   max-width: 677px;
+}
+
+@mixin text-font-mobile {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+@mixin text-font-tablet {
+  font-size: 17px;
+  line-height: 23px;
+}
+
+@mixin text-font-desktop {
+  font-size: 22px;
+  line-height: 30px;
 }
 
 @mixin button-settings-mobile {
