@@ -31,9 +31,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    @include title-font-desktop;
     margin-bottom: 43px;
-    font-size: 52px;
-    line-height: 77px;
   }
 }
 

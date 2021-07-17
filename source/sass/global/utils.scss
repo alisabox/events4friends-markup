@@ -28,3 +28,41 @@ $mobile-width-only: 639px;
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
+
+@mixin title-font-mobile {
+  font-size: 25px;
+  line-height: 29px;
+  font-weight: 700;
+}
+
+@mixin title-font-tablet {
+  font-size: 45px;
+  line-height: 66px;
+}
+
+@mixin title-font-desktop {
+  font-size: 52px;
+  line-height: 77px;
+  max-width: 677px;
+}
+
+@mixin button-settings-mobile {
+  text-align: center;
+  min-height: 34px;
+  width: 132px;
+  padding: 9px;
+  box-sizing: border-box;
+  text-decoration: none;
+  border-radius: 7px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+@mixin button-settings-tablet {
+  min-height: 47px;
+  width: 185px;
+  padding: 12px;
+  font-size: 16px;
+  line-height: 22px;
+}

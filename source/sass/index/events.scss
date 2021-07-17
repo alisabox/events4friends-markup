@@ -13,22 +13,17 @@
 }
 
 .events__title {
+  @include title-font-mobile;
   margin: 0;
   margin-bottom: 5px;
-  font-size: 25px;
-  line-height: 29px;
-  font-weight: 700;
 
   @media (min-width: $tablet-width) {
+    @include title-font-tablet;
     margin-bottom: 9px;
-    font-size: 45px;
-    line-height: 66px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 677px;
-    font-size: 52px;
-    line-height: 77px;
+    @include title-font-desktop;
   }
 }
 
@@ -310,26 +305,13 @@
 }
 
 .events__button {
+  @include button-settings-mobile;
   display: block;
   margin: 0 auto;
-  text-align: center;
-  min-height: 34px;
-  width: 132px;
-  padding: 9px;
-  box-sizing: border-box;
-  text-decoration: none;
   color: $basic-white;
   background-color: $light-blue-button;
-  border-radius: 7px;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 700;
 
   @media (min-width: $tablet-width) {
-    min-height: 47px;
-    width: 185px;
-    padding: 12px;
-    font-size: 16px;
-    line-height: 22px;
+    @include button-settings-tablet;
   }
 }

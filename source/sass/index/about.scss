@@ -180,19 +180,10 @@
 }
 
 .about__item__link {
+  @include button-settings-mobile;
   display: inline-block;
-  text-align: center;
-  min-height: 34px;
-  width: 132px;
-  padding: 9px;
-  box-sizing: border-box;
-  text-decoration: none;
   color: $basic-white;
   background-color: $light-blue-button;
-  border-radius: 7px;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 700;
 
   @media (min-width: $tablet-width) {
     margin-top: auto;
