@@ -3,13 +3,18 @@
   margin: 0;
 }
 
+.page--main {
+  background-color: $basic-violet;
+}
+
 .page__body {
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 100%;
   margin: 0 auto;
   font-family: "Circe", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: $basic-black;
+  background-color: $basic-white;
 }

@@ -14,7 +14,7 @@
 
   @media (min-width: $desktop-width-sx) {
     margin-bottom: 30px;
-    padding: 136px 103px;
+    padding: 92px 103px;
   }
 }
 
@@ -92,8 +92,9 @@
 
 .feature__details {
   @media (min-width: $desktop-width-sx) {
-    font-size: 21px;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 350;
   }
 }
 

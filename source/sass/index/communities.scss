@@ -10,7 +10,7 @@
 
   @media (min-width: $desktop-width-sx) {
     margin-bottom: 30px;
-    padding: 51px 103px 0;
+    padding: 92px 103px;
   }
 }
 
@@ -141,11 +141,14 @@
   @include button-settings-mobile;
   display: block;
   margin: 0 auto;
-  color: $basic-black;
-  background-color: $basic-white;
-  border: 1px solid $pale-blue-line;
 
   @media (min-width: $tablet-width) {
     @include button-settings-tablet;
+  }
+
+  &:hover {
+    color: $basic-white;
+    background-color: $light-blue-button;
+    transition: all 0.3s;
   }
 }

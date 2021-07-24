@@ -72,9 +72,10 @@
     line-height: 25px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-sx) {
     font-size: 27px;
     line-height: 34px;
+    font-weight: 350;
   }
 }
 

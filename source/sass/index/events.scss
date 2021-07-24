@@ -9,7 +9,7 @@
 
   @media (min-width: $desktop-width-sx) {
     margin-bottom: 30px;
-    padding: 51px 103px 0;
+    padding: 92px 103px;
   }
 }
 
@@ -293,11 +293,12 @@
   border-bottom-right-radius: 10px;
   text-decoration: none;
   text-align: center;
-  color: $basic-white;
+  color: $basic-black;
   font-size: 13px;
   line-height: 18px;
   font-weight: 700;
-  background-color: $light-blue-button;
+  background-color: $pale-blue-events;
+  transition: all 0.3s;
 
   @media (min-width: $tablet-width) {
     padding: 16px;
@@ -308,16 +309,26 @@
   @media (min-width: $desktop-width) {
     padding: 22px;
   }
+
+  &:hover {
+    color: $basic-white;
+    background-color: $light-blue-button;
+    transition: all 0.3s;
+  }
 }
 
 .events__button {
   @include button-settings-mobile;
   display: block;
   margin: 0 auto;
-  color: $basic-white;
-  background-color: $light-blue-button;
 
   @media (min-width: $tablet-width) {
     @include button-settings-tablet;
+  }
+
+  &:hover {
+    color: $basic-white;
+    background-color: $light-blue-button;
+    transition: all 0.3s;
   }
 }

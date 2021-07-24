@@ -1,6 +1,6 @@
 .about__wrapper {
   max-width: 1160px;
-  padding: 10px 10px 0;
+  padding: 30px 10px 0;
   margin: 0 auto;
   margin-bottom: 79px;
 
@@ -10,16 +10,14 @@
 
   @media (min-width: $desktop-width-sx) {
     margin-bottom: 30px;
-    padding: 51px 103px 0;
+    padding: 92px 103px;
   }
 }
 
 .about__title {
+  @include title-font-mobile;
   margin: 0;
   margin-bottom: 29px;
-  font-size: 33px;
-  line-height: 34px;
-  font-weight: 700;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 31px;
@@ -148,6 +146,7 @@
   height: 182px;
   margin-bottom: 6px;
   border-radius: 10px;
+  object-fit: cover;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -202,8 +201,7 @@
 .about__item__link {
   @include button-settings-mobile;
   display: inline-block;
-  color: $basic-white;
-  background-color: $light-blue-button;
+  transition: all 0.3s;
 
   @media (min-width: $tablet-width) {
     margin-top: auto;
@@ -221,5 +219,11 @@
     padding: 18px;
     font-size: 16px;
     line-height: 22px;
+  }
+
+  &:hover {
+    color: $basic-white;
+    background-color: $light-blue-button;
+    transition: all 0.3s;
   }
 }
