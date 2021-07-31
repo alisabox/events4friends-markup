@@ -211,9 +211,8 @@
   @media (min-width: $desktop-width-sx) {
     visibility: visible;
     opacity: 1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
     column-gap: 52px;
     padding: 0;
     text-align: right;
