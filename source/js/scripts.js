@@ -1,3 +1,7 @@
+import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
+
+// Mobile menu toggler
+
 const navigation = document.querySelector('.page-navigation');
 const toggler = navigation.querySelector('.page-navigation__toggle');
 const navbar = navigation.querySelector('.page-navigation__list');
@@ -20,15 +24,36 @@ const checkMenuStatus = () => {
   }
 };
 
+// Scroll-up Button
 
-upButton = document.querySelector('.scroll-up-link');
+const upButton = document.querySelector('.scroll-up-link');
 
 window.onscroll = () => scrollFunction();
 
-scrollFunction = () => {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+const scrollFunction = () => {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
     upButton.classList.add('scroll-up-link-showed');
   } else {
     upButton.classList.remove('scroll-up-link-showed');
   }
 }
+
+// Slider
+
+const swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1,
+  spaceBetween: 24,
+  speed: 500,
+  centeredSlides: true,
+  loop: true,
+  loopAdditionalSlides: 30,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  autoplay: {
+    delay: 5000,
+  pauseOnMouseEnter: true,
+  },
+});
+

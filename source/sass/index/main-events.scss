@@ -1,15 +1,16 @@
 .main-events {
   position: relative;
-  padding: 0 10px 52px;
-  background-color: $basic-violet;
+  padding-bottom: 52px;
+  background-color: $blue-background;
   width: 100%;
   box-sizing: border-box;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    padding: 0 10px 79px;
+    padding-bottom: 79px;
   }
 
   @media (min-width: $desktop-width-sx) {
-    padding: 0 0 92px;
+    padding-bottom: 92px;
   }
 }

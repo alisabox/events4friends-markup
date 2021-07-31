@@ -1,52 +1,79 @@
-.slider {
+.swiper-container {
   position: relative;
-  width: 100%;
+  width: calc(100% - 20px);
   box-sizing: border-box;
+  height: 338px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 276px;
+    width: calc(100% - 168px);
+    overflow: visible !important;
+  }
 
   @media (min-width: $desktop-width-sx) {
-    padding: 0 103px;
+    min-height: 443px;
+    width: 1160px !important;
+    margin: 0 auto !important;
   }
 }
 
-.slider__wrapper {
+.swiper-slide {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-width: 300px;
   max-width: 1160px;
-  height: 338px;
-  box-sizing: border-box;
-  padding: 34px 12px;
   text-align: center;
   align-items: center;
-  background: linear-gradient(to right, rgba(0,0,0, 0.7) 30%, rgba(0,0,0,0)),
-              url("../img/mobile-slider-marathon.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   border-radius: 10px;
   color: $basic-white;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
-    margin: 0 84px;
-    padding: 32px 27px;
     min-width: 472px;
-    height: 276px;
     align-items: flex-start;
     text-align: left;
-    background: linear-gradient(to right, rgba(0,0,0, 0.7) 30%, rgba(0,0,0,0)),
-                url("../img/tablet-slider-marathon.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  }
+}
+
+.slide-wrapper::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  content: "";
+  background-image: linear-gradient(to right, rgba(0,0,0, 0.7) 30%, rgba(0,0,0,0));
+  border-radius: 10px;
+}
+
+.slide__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.slide__img-content {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.slide-wrapper {
+  padding: 34px 12px;
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 27px;
   }
 
   @media (min-width: $desktop-width-sx) {
-    margin: 0 auto;
     padding: 71px 106px 66px 46px;
-    height: 443px;
-    background: linear-gradient(to right, rgba(0,0,0, 0.7) 30%, rgba(0,0,0,0)),
-                url("../img/desktop-slider-marathon.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,7 +81,7 @@
   }
 }
 
-.slider__title {
+.slide__title {
   margin: 0;
   margin-bottom: 8px;
   font-size: 20px;
@@ -73,7 +100,7 @@
   }
 }
 
-.slider__text {
+.slide__text {
   margin: 0 24px 17px;
 
   @media (min-width: $tablet-width) {
@@ -89,7 +116,7 @@
   }
 }
 
-.slider__button {
+.slide__button {
   display: inline-block;
   min-height: 29px;
   width: 153px;
@@ -99,10 +126,12 @@
   text-decoration: none;
   color: $basic-white;
   background-color: $light-blue-button;
+  border: 1px solid $light-blue-button;
   border-radius: 7px;
   font-size: 12px;
   line-height: 16px;
   font-weight: 700;
+  transition: all 0.5s ease-in-out;
 
   @media (min-width: $tablet-width) {
     min-height: 38px;
@@ -117,40 +146,62 @@
     font-size: 16px;
     line-height: 22px;
   }
-}
 
+  &:hover {
+    color: $basic-black;
+    background-color: $basic-white;
+    transition: all 0.5s ease-in-out;
 
-.slider__previous-event,
-.slider__next-event {
-  padding: 0;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin-top: auto;
-  margin-bottom: auto;
-  height: 40px;
-  width: 40px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.slider__previous-event {
-  left: 0;
-
-  &:before {
-    content: url("../img/previous-arrow.svg");
-    position: relative;
-    display: inline-block;
   }
 }
 
-.slider__next-event {
-  right: 0;
+.swiper-button-prev,
+.swiper-button-next {
+  color: white !important;
 
-  &:before {
-    content: url("../img/next-arrow.svg");
-    position: relative;
-    display: inline-block;
+  &:hover,
+  &:active {
+    opacity: 0.5;
   }
+
+  &::after {
+    font-size: 28px !important;
+  }
+}
+
+.swiper-button-next {
+  right: 0 !important;
+
+  @media (min-width: $tablet-width) {
+    right: -65px !important;
+  }
+}
+
+.swiper-button-prev {
+  left: 0 !important;
+
+  @media (min-width: $tablet-width) {
+    left: -65px !important;
+  }
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
+  opacity: 0.2;
+
+  & .slide-wrapper {
+    visibility: hidden;
+  }
+}
+
+.swiper-slide-next {
+  background: linear-gradient(to right, #C4C4C4 30%, rgba(0,0,0,0));
+}
+
+.swiper-slide-prev {
+  background: linear-gradient(to left, #C4C4C4 30%, rgba(0,0,0,0));
+}
+
+.swiper-slide:not(.swiper-slide-prev):not(.swiper-slide-next):not(.swiper-slide-active) {
+  visibility: hidden;
 }

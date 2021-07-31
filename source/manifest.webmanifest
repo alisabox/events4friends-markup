@@ -1,6 +1,10 @@
 {
+  "short_name": "Events4Friends",
+  "name": "Events4Friends — нетворкинг в Калининграде",
   "icons": [
-    { "src": "img/favicons/favicon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "img/favicons/favicon-192.png", "type": "image/png", "sizes": "192x192", "purpose": "any maskable" },
     { "src": "img/favicons/favicon-512.png", "type": "image/png", "sizes": "512x512" }
-  ]
+  ],
+  "theme_color": "#3A5AFF",
+  "background_color": "#3A5AFF"
 }

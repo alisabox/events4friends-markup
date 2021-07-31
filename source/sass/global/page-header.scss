@@ -1,7 +1,7 @@
 .page-header {
   position: relative;
   padding: 16px 10px 0;
-  background-color: $basic-violet;
+  background-color: $blue-background;
 
   @media (min-width: $desktop-width-sx) {
     padding: 18px 103px 0;
@@ -11,12 +11,12 @@
 .page-header__wrapper {
   max-width: 1160px;
   margin: 0 auto;
+  border-bottom: 1px solid $basic-white;
 
   @media (min-width: $desktop-width-sx) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid $basic-white;
   }
 }
 
@@ -65,31 +65,42 @@
 
 .page-navigation {
   position: absolute;
-  background-color: $grey-background;
   top: 0;
   left: 0;
   z-index: 1;
   width: 100%;
+  height: 55px;
+
+  @media (min-width: $tablet-width) {
+  height: 83px;
+  }
 
   @media (min-width: $desktop-width-sx) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     position: relative;
     background-color: transparent;
   }
 }
 
 .page-navigation--open {
-  position:fixed;
-  width:100%;
-  height:100%;
+  position: fixed;
+  width: 100%;
+  height: 100%;
   background-color: rgba($basic-black, 0.5);
-  z-index:100;
+  z-index: 100;
 }
 
 .overlay {
-  position:absolute;
-  width:100%;
-  height:100%;
-  z-index:1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  @media (min-width: $desktop-width-sx) {
+    display: none;
+  }
 }
 
 .page-navigation__toggle {
@@ -102,6 +113,7 @@
   background: none;
   border: none;
   cursor: pointer;
+  z-index: 100;
 
   &:active {
     opacity: 0.3;
@@ -186,21 +198,32 @@
 }
 
 .page-navigation__list {
-  list-style: none;
+  visibility: hidden;
   margin: 0;
   padding: 26px 0 6px;
+  list-style: none;
   text-align: center;
   background-color: $grey-background;
-  display: none;
+  opacity: 0;
+  transform: translate(0px, -100%);
+  transition: all 0.5s ease-in-out;
 
   @media (min-width: $desktop-width-sx) {
+    visibility: visible;
+    opacity: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    column-gap: 52px;
     padding: 0;
     text-align: right;
     background-color: transparent;
+    transform: translate(0px, 0px);
+    transition: none;
+  }
 
+  @media (min-width: $desktop-width) {
+    column-gap: 122px;
   }
 
   & li {
@@ -208,11 +231,6 @@
 
     @media (min-width: $desktop-width-sx) {
       margin-bottom: 7px;
-      margin-right: 50px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-right: 122px;
     }
   }
 
@@ -224,7 +242,10 @@
 }
 
 .page-navigation__list--open {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0px);
+  transition: all 0.5s ease-in-out;
 }
 
 .page-navigation__logo {
