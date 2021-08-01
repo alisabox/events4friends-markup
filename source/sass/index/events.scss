@@ -56,12 +56,11 @@
 
   @media (min-width: $tablet-width) {
     display: inline-flex;
-    column-gap: 31px;
     margin-bottom: 39px;
+    column-gap: 0;
   }
 
   @media (min-width: $desktop-width-sx) {
-    column-gap: 17px;
     margin-bottom: 31px;
   }
 }
@@ -81,10 +80,12 @@
   @media (min-width: $tablet-width) {
     height: 33px;
     padding: 8px 10px 8px 15px;
+    margin-right: 31px;
   }
 
   @media (min-width: $desktop-width-sx) {
     height: 40px;
+    margin-right: 17px;
   }
 
   &:hover {

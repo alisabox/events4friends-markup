@@ -25,7 +25,7 @@ const styles = () => {
     ]))
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
@@ -36,7 +36,7 @@ exports.styles = styles;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: "source"
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -139,6 +139,10 @@ const build = gulp.series(
     styles,
     html,
     scripts
+  ),
+  gulp.series(
+    server,
+    watcher
   )
 )
 

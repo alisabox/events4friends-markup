@@ -35,7 +35,7 @@ $desktop-width: 1366px;
 @mixin title-font-mobile {
   font-size: 26px;
   line-height: 29px;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 @mixin title-font-tablet {

@@ -4,7 +4,7 @@
   padding: 26px 10px;
   font-size: 20px;
   line-height: 23px;
-  font-weight: 700;
+  font-weight: bold;
   color: $basic-white;
 
   @media (min-width: $tablet-width) {
@@ -24,9 +24,9 @@
   margin: 0 auto;
   max-width: 1160px;
   padding: 46px 10px 9px;
-  font-size: 20px;
-  line-height: 23px;
-  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: bold;
 
   @media (min-width: $tablet-width) {
     padding: 41px 10px 18px;
@@ -38,7 +38,6 @@
     padding: 69px 103px 46px;
     font-size: 52px;
     line-height: 71px;
-    font-weight: 800;
   }
 }
 

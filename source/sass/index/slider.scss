@@ -12,7 +12,7 @@
 
   @media (min-width: $desktop-width-sx) {
     min-height: 443px;
-    width: 1160px !important;
+    max-width: 1160px !important;
     margin: 0 auto !important;
   }
 }

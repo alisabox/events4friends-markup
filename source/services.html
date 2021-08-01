@@ -16,7 +16,7 @@
   <link rel="icon" href="img/favicons/favicon-152.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/favicon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page">
   <div class="page__body">
@@ -33,7 +33,7 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="page-navigation__list">
-            <img class="page-navigation__logo" src="img/icons/header_logo.png" width="32" height="32" alt="Events for friends logo">
+            <li class="page-navigation__logo"><img src="img/icons/header_logo.png" width="32" height="32" alt="Events for friends logo"></li>
             <li><a class="page-navigation__item" href="index.html">Главная</a></li>
             <li><a class="page-navigation__item" href="index.html#about">О нас</a></li>
             <li><a class="page-navigation__item" href="communities.html">Сообщества</a></li>
@@ -45,7 +45,7 @@
     </header>
     <main class="page-main">
       <div class="page-main__wrapper">
-        <h1 class="page-main__title-black">Услуги</h2>
+        <h1 class="page-main__title-black">Услуги</h1>
         <p class="page-main__text">Размещаем актуальные, а главное доступные онлайн и оффлайн события для жителей города Калининград. Всегда свежие и актуальные события в нашем городе, а также актуальные события.</p>
         <div class="select-wrapper">
           <select class="select" id="select">
@@ -69,7 +69,7 @@
             <p class="services-page__item-text">Небольшое описание с чуть более подробными пояснениями о подробностях услуги, которые захочет узнать пользователь этого сайта. Вообщем описание очень классное.</p>
             <picture class="services-page__item-img">
               <source media="(min-width: 1024px)" srcset="img/services/desktop-cleaning.jpg 1x, img/services/desktop-cleaning_x2.jpg 2x">
-              <source media="(min-width: 640px)" srcset="img/services/tablet-cleaning.jpg 1x, img/services/tablet-cleaning_x2.jpg 1x">
+              <source media="(min-width: 640px)" srcset="img/services/tablet-cleaning.jpg 1x, img/services/tablet-cleaning_x2.jpg 2x">
               <img class="services-page__img-content" src="img/services/mobile-cleaning.jpg" srcset="img/services/mobile-cleaning_x2.jpg 2x" width="279" height="141" alt="Человек в рабочей форме пылесосит пол">
             </picture>
             <a href="card.html" class="services-page__item-link">Подробнее</a>
@@ -84,7 +84,7 @@
             <p class="services-page__item-text">Небольшое описание с чуть более подробными пояснениями о подробностях услуги, которые захочет узнать пользователь этого сайта. Вообщем описание очень классное.</p>
             <picture class="services-page__item-img">
               <source media="(min-width: 1024px)" srcset="img/services/desktop-design.jpg 1x, img/services/desktop-design_x2.jpg 2x">
-              <source media="(min-width: 640px)" srcset="img/services/tablet-design.jpg 1x, img/services/tablet-design_x2.jpg 1x">
+              <source media="(min-width: 640px)" srcset="img/services/tablet-design.jpg 1x, img/services/tablet-design_x2.jpg 2x">
               <img class="services-page__img-content" src="img/services/mobile-design.jpg" srcset="img/services/mobile-design_x2.jpg 2x" width="279" height="141" alt="Человек за компьютером">
             </picture>
             <a href="card.html" class="services-page__item-link">Подробнее</a>
@@ -99,7 +99,7 @@
             <p class="services-page__item-text">Небольшое описание с чуть более подробными пояснениями о подробностях услуги, которые захочет узнать пользователь этого сайта. Вообщем описание очень классное.</p>
             <picture class="services-page__item-img">
               <source media="(min-width: 1024px)" srcset="img/services/desktop-carsharing.jpg 1x, img/services/desktop-carsharing_x2.jpg 2x">
-              <source media="(min-width: 640px)" srcset="img/services/tablet-carsharing.jpg 1x, img/services/tablet-carsharing_x2.jpg 1x">
+              <source media="(min-width: 640px)" srcset="img/services/tablet-carsharing.jpg 1x, img/services/tablet-carsharing_x2.jpg 2x">
               <img class="services-page__img-content" src="img/services/mobile-carsharing.jpg" srcset="img/services/mobile-carsharing_x2.jpg 2x" width="279" height="141" alt="Автомобиль каршеринга">
             </picture>
             <a href="card.html" class="services-page__item-link">Подробнее</a>
@@ -116,6 +116,6 @@
         l77.781,77.781c21.803,21.803,57.28,21.803,79.083,0C488.001,263.088,488.001,227.589,466.22,205.787z"/>
     </svg>
   </a>
-  <script src="js/scripts.js"></script>
+  <script src="js/scripts.min.js" type="module"></script>
 </body>
 </html>

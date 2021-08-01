@@ -38,7 +38,7 @@
     @include text-font-tablet;
   }
 
-  @media (min-width: $desktop-width-sx) {
+  @media (min-width: $desktop-width-sx)  {
     @include text-font-desktop;
     margin-bottom: 28px;
   }
@@ -98,6 +98,7 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 23px;
+  font-family: inherit;
   cursor: pointer;
   transition: all 0.3s;
 

@@ -103,6 +103,7 @@
   margin-bottom: 10px;
   font-size: 15px;
   line-height: 19px;
+  font-weight: 350;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 18px;
@@ -163,17 +164,17 @@
 }
 
 .services-page__item-link::after {
-  content: url("../img/details-arrow.svg");
+  content: url("../img/icons/details-arrow.svg");
   position: relative;
   padding-left: 20px;
 
   @media (min-width: $tablet-width) {
-    content: url("../img/details-arrow-tablet.svg");
+    content: url("../img/icons/details-arrow-tablet.svg");
     padding-left: 31px;
   }
 
   @media (min-width: $desktop-width) {
-    content: url("../img/details-arrow-desktop.svg");
+    content: url("../img/icons/details-arrow-desktop.svg");
     padding-left: 10px;
   }
 }
