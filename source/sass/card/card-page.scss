@@ -1,14 +1,20 @@
 .card {
+  max-width: 1160px;
+  margin: 42px 10px;
   display: flex;
   flex-direction: column;
   position: relative;
   min-height: 444px;
-  margin: 42px 10px;
   box-sizing: border-box;
 
   @media (min-width: $desktop-width-sx) {
     margin: 42px 103px;
     padding-right: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 42px auto;
+    padding-right: 700px;
   }
 }
 
