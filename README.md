@@ -14,6 +14,8 @@
 
 Пройти по ссылке: https://alisabox.github.io/events4friends-markup/source/index.html
 
+<img width="730" alt="image" src="https://user-images.githubusercontent.com/77010822/128285716-5c61772a-682a-4984-a877-6b9437cbd9d4.png">
+
 ## Как запустить код?
 
 Открыть терминал и выполнить последовательно команды:
