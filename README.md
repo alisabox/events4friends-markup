@@ -1,4 +1,4 @@
-# Вёрстка сайта events4friends-markup
+# Вёрстка сайта events4friends
 
 ## Задача
 
