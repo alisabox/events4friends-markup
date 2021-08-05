@@ -7,7 +7,7 @@
 ##  Кто здесь?
 
 * Заказчик: Вадим Канинский - [↗️ vadimcpp.ru](https://vadimcpp.ru/) [↗️ vk](https://vk.com/vadimcpp) [↗️ tg](https://t.me/vadimcpp)
-* Дизайнер: Давид Саргсян - [↗️ tg](https://t.me/d_sargs)
+* Дизайнер: Давид Саргсян - [↗️ tg](https://t.me/d_sargs) [↗️ vk](https://vk.com/d.sargs)
 * Исполнитель:  Алиса Лобжанидзе - [↗️ tg](https://t.me/alisabox)
 
 ## Демо
