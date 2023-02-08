@@ -1,24 +1,24 @@
-# Вёрстка сайта events4friends
+# events4friends website markup
 
-## Задача
+## Goal
 
-Реализовать страницы сайта согласно [макету](https://www.figma.com/file/kq29MDZV6JcVGBfIqkIaZr/events4friends-(Copy)?node-id=12%3A2&t=ZIv7tDuROeDaJP1y-1).
+Implement website markup using the [design](https://www.figma.com/file/kq29MDZV6JcVGBfIqkIaZr/events4friends-(Copy)?node-id=12%3A2&t=ZIv7tDuROeDaJP1y-1).
 
-##  Кто здесь?
+##  Team
 
-* Заказчик: Вадим Канинский - [↗️ vadimcpp.ru](https://vadimcpp.ru/) [↗️ vk](https://vk.com/vadimcpp) [↗️ tg](https://t.me/vadimcpp)
-* Дизайнер: Давид Саргсян - [↗️ tg](https://t.me/d_sargs) [↗️ vk](https://vk.com/d.sargs)
-* Исполнитель:  Алиса Лобжанидзе - [↗️ tg](https://t.me/alisabox)
+* Client: Vadim Kaninsky - [↗️ vadimcpp.ru](https://vadimcpp.ru/) [↗️ vk](https://vk.com/vadimcpp) [↗️ tg](https://t.me/vadimcpp)
+* Designer: David Sargsyan - [↗️ tg](https://t.me/d_sargs) [↗️ vk](https://vk.com/d.sargs)
+* Developer:  Alisa Lobzhanidze - [↗️ tg](https://t.me/alisabox)
 
-## Демо
+## Demo
 
-Пройти по ссылке: https://alisabox.github.io/events4friends-markup/source/index.html
+Live version: https://alisabox.github.io/events4friends-markup/source/index.html
 
 <img width="730" alt="image" src="https://user-images.githubusercontent.com/77010822/128285716-5c61772a-682a-4984-a877-6b9437cbd9d4.png">
 
-## Как запустить код?
+## How to run the code
 
-Открыть терминал и выполнить последовательно команды:
+Open the terminal and run the following commands:
 
 ```
 git clone git@github.com:alisabox/events4friends-markup.git
@@ -26,7 +26,3 @@ cd events4friends-markup
 npm install
 npm start
 ```
-
-## Результат
-
-Этот мой первый коммерческий проект. Результат работы используется тут: https://events4friends.ru/
