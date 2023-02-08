@@ -2,7 +2,7 @@
 
 ## Задача
 
-Реализовать страницы сайта согласно [макету](https://www.figma.com/file/UnqmzPf8WxFQHkXLGIfiuD/?node-id=12%3A2).
+Реализовать страницы сайта согласно [макету](https://www.figma.com/file/kq29MDZV6JcVGBfIqkIaZr/events4friends-(Copy)?node-id=12%3A2&t=ZIv7tDuROeDaJP1y-1).
 
 ##  Кто здесь?
 
